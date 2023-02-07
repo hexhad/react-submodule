@@ -1,0 +1,121 @@
+.container {
+  margin: 3em;
+  .modal{
+    .close-btn{
+        display: flex;
+        align-items: center;
+        background-color: aqua;
+        button{
+           
+        }
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: row;
+    .search-wrapper {
+      input {
+        width: 20vw;
+        height: 30px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      .search-btn {
+        height: 35px;
+        border-width: 0;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 0 10px;
+        background-color: rgb(87, 139, 184);
+        color: #fff;
+      }
+      .search-opt {
+        @extend .search-btn;
+        &::selected {
+          border-width: 0;
+        }
+      }
+    }
+    .profile {
+      margin-left: auto;
+      button {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .main-container {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      .pro-card {
+        border-width: 10px;
+        border-color: black;
+        .pro-img {
+          img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+          }
+        }
+        .pro-txt {
+          p {
+            margin: 0;
+          }
+        }
+        .liked{
+            background-color: red;
+        }
+      }
+    }
+    .pagination{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0;
+        .pag-number{
+            margin: 0 10px;
+            .pag-t{
+
+            }
+        }
+        .current {
+            button{
+                background-color: cadetblue !important;
+                color: #fff;
+            }
+        }
+    }
+  }
+}
+
+.ReactModal__Body--open {
+    // overflow: scroll;
+    .modal{
+        .grid-set{
+            display: grid;
+            grid-template-columns: 10vw 10vw 10vw 10vw;
+        }
+    .like-card {
+        border-width: 10px;
+        border-color: black;
+        .like-img {
+          img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        .like-txt {
+          p {
+            margin: 0;
+          }
+        }
+
+      }
+    }
+}
